@@ -13,9 +13,20 @@ python_is_required() {
     exit 0
 }
 
+is_sdk_installed() {
+    if command_exists gcloud; then
+        gcloud components update
+        exit 0
+    fi
+}
+
 main() {
     python_is_required
-    echo "Installing Google Cloud SDK"
+    is_sdk_installed
+    echo ""
+    echo "Install Google Cloud Platform SDK:"
+    echo "   https://cloud.google.com/sdk/docs/quickstart-mac-os-x"
+    echo ""
 }
 
 main

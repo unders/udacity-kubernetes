@@ -17,6 +17,15 @@ containers, using Kubernetes.
 
 ## Google Cloud Platform
 
+### Commands
+
+#### gcloud:
+
+    $ gcloud info
+    $ gcloud version
+    $ gcloud config list
+
+
 ### SDK - Console
 * [SDK](https://cloud.google.com/sdk/)
 
