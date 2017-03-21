@@ -119,18 +119,22 @@ $ sudo docker ps
 
 
 ### 6. Kubernetes
+
     * [kubectl Cheat Sheet](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/)
 
-    $ gcloud container clusters create k0
+```
+$ gcloud container clusters create k0
 
-    $ kubectl run nginx --image=nginx:1.10.0
-    $ kubectl get pods
-    $ kubectl expose deployment nginx --port 80 --type LoadBalancer
-    $ kubectl get services
-    $ cat pods/monolith.yaml
-    $ kubectl create -f pods/monolith.yaml
-    $ kubectl get pods
-    $ kubectl describe pods monolith
+$ kubectl run nginx --image=nginx:1.10.0
+$ kubectl get pods
+$ kubectl expose deployment nginx --port 80 --type LoadBalancer
+$ kubectl get services
+$ cat pods/monolith.yaml
+$ kubectl create -f pods/monolith.yaml
+$ kubectl get pods
+$ kubectl describe pods monolith
+```
+
 
 ### 7. Pods
    * [Video](https://classroom.udacity.com/courses/ud615/lessons/7824962412/concepts/81991020690923)
