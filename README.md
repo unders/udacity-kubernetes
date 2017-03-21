@@ -176,20 +176,23 @@ $ kubectl describe pods monolith
 #### 10 Services
 
  * [Services User Guide](https://kubernetes.io/docs/user-guide/services/)
+ 
 
-   The wrong way:
+The wrong way:
 
-     $ cat services/monolith.yaml
-     $ kubectl create -f services/monolith.yaml
-     $ gcloud compute firewall-rules create allow-monolith-nodeport --allow=tcp:31000
-     $ gcloud compute instances list
-     $ kubectl get services
-     $ kubectl get pods -l "app=monolith"
-     $ kubectl get pods -l "app=monolith,secure=enabled"
-     $ kubectl describe pods secure-monolith
-     $ kubectl label pods secure-monolith "secure=enabled"
-     $ kubectl get pods -l "app=monolith,secure=enabled"
-     $ curl -k https://35.187.112.96:31000
+```
+$ cat services/monolith.yaml
+$ kubectl create -f services/monolith.yaml
+$ gcloud compute firewall-rules create allow-monolith-nodeport --allow=tcp:31000
+$ gcloud compute instances list
+$ kubectl get services
+$ kubectl get pods -l "app=monolith"
+$ kubectl get pods -l "app=monolith,secure=enabled"
+$ kubectl describe pods secure-monolith
+$ kubectl label pods secure-monolith "secure=enabled"
+$ kubectl get pods -l "app=monolith,secure=enabled"
+$ curl -k https://35.187.112.96:31000
+```
 
 ### 11 Deploying Microservices
          $ kubectl create -f deployments/auth.yaml
