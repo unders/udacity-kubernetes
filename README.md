@@ -120,7 +120,7 @@ $ sudo docker ps
 
 ### 6. Kubernetes
 
-    * [kubectl Cheat Sheet](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/)
+  * [kubectl Cheat Sheet](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/)
 
 ```
 $ gcloud container clusters create k0
