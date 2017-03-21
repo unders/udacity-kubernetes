@@ -150,7 +150,8 @@ $ kubectl describe pods monolith
     $ ping -c 3 google.com
 
 ### 8. Monitoring and Health Checks
-    * [Configuring Liveness and Readiness Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
+
+  * [Configuring Liveness and Readiness Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
 
 #### 9. Secrets
 
@@ -173,7 +174,8 @@ $ kubectl describe pods monolith
     $ kubectl logs -c nginx secure-monolith
 
 #### 10 Services
-    * [Services User Guide] (https://kubernetes.io/docs/user-guide/services/)
+
+  * [Services User Guide] (https://kubernetes.io/docs/user-guide/services/)
 
    The wrong way:
 
