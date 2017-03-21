@@ -51,34 +51,40 @@ containers, using Kubernetes.
     $ curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJleHAiOjE0OTAyNjM5OTcsImlhdCI6MTQ5MDAwNDc5NywiaXNzIjoiYXV0aC5zZXJ2aWNlIiwic3ViIjoidXNlciJ9.7qpjI8ZBS92VTTBaI6I-oWn2-x7b4mOM2dB9r1EQsfY" http://localhost:10080/secure
 
 ### 3. Installing Apps With Native OS Tools
+
  * [video](https://classroom.udacity.com/courses/ud615/lessons/7826816435/concepts/81980819460923)
 
+```
+$ gcloud compute instances create ubuntu \
+   --image-project ubuntu-os-cloud \
+   --image ubuntu-1604-xenial-v20160420c
+$ gcloud compute instances list
+$ gcloud compute ssh ubuntu
+$ sudo apt-get update
+$ sudo apt-get install nginx
+$ sudo systemctl start nginx
+$ sudo systemctl status nginx
+$ curl http://127.0.0.1
+$ sudo ps aux | grep nginx
+$ cat /etc/init/nginx.conf
+$ sudo systemctl stop nginx
 
-     $ gcloud compute instances create ubuntu \
-       --image-project ubuntu-os-cloud \
-       --image ubuntu-1604-xenial-v20160420c
-     $ gcloud compute instances list
-     $ gcloud compute ssh ubuntu
-     $ sudo apt-get update
-     $ sudo apt-get install nginx
-     $ sudo systemctl start nginx
-     $ sudo systemctl status nginx
-     $ curl http://127.0.0.1
-     $ sudo ps aux | grep nginx
-     $ cat /etc/init/nginx.conf
-     $ sudo systemctl stop nginx
-
+```
  ### 4. Docker
+ 
    * [Video 1](https://classroom.udacity.com/courses/ud615/lessons/7826816435/concepts/81980819530923)
    * [Video 2](https://classroom.udacity.com/courses/ud615/lessons/7826816435/concepts/81980819550923)
 
-      $ sudo apt-get install docker.io
-      $ sudo docker images
-      $ sudo docker pull nginx:1.10.0
-      $ sudo docker images
-      $ sudo dpkg -l | grep nginx
-      $ sudo docker run -d nginx:1.10.0
-      $ sudo docker ps
+```
+$ sudo apt-get install docker.io
+$ sudo docker images
+$ sudo docker pull nginx:1.10.0
+$ sudo docker images
+$ sudo dpkg -l | grep nginx
+$ sudo docker run -d nginx:1.10.0
+$ sudo docker ps
+``` 
+
 
 ### 5. Dockerfile
  * [Video](https://classroom.udacity.com/courses/ud615/lessons/7826816435/concepts/81980819570923)
