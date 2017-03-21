@@ -175,7 +175,7 @@ $ kubectl describe pods monolith
 
 #### 10 Services
 
-  * [Services User Guide] (https://kubernetes.io/docs/user-guide/services/)
+ * [Services User Guide](https://kubernetes.io/docs/user-guide/services/)
 
    The wrong way:
 
